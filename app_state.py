@@ -34,6 +34,7 @@ def database_path_input(default_path: str, widget_key: str) -> str:
         key=widget_key,
         on_change=commit_path,
         help="This selection is shared by every dashboard page.",
+        disabled=True,
     )
     normalized = normalize_database_path(value)
     st.session_state[ACTIVE_DATABASE_KEY] = normalized
