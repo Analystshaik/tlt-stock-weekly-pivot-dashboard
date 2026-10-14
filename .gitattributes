@@ -1,0 +1,2 @@
+# Keep the SQLite market-data file out of normal Git object storage.
+data/*.sqlite filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,43 @@
+{
+  "database": "data/streamlit_market_data.sqlite",
+  "source_table": "relationship_bars_day",
+  "reference_symbol": "TLT",
+  "index_symbols": [
+    "SPY",
+    "QQQ",
+    "DIA",
+    "IWM",
+    "IWN"
+  ],
+  "symbol_source_tables": {},
+  "weekly_bars_table": "tlt_weekly_bars",
+  "pivots_table": "tlt_weekly_pivots",
+  "backtest_table": "tlt_weekly_pivot_backtest",
+  "backtest_summary_table": "tlt_weekly_pivot_backtest_summary",
+  "source_status_table": "tlt_weekly_pivot_source_status",
+  "minimum_score": 6,
+  "very_strong_score": 8,
+  "confirmation_requires_close_followthrough": false,
+  "backtest_confirmed_only": true,
+  "backtest_horizons_weeks": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "pattern_settings": {
+    "gap_tolerance_pct": 0.25,
+    "piercing_min_prior_body_pct_range": 35.0,
+    "piercing_min_prior_body_vs_average": 0.6,
+    "hammer_wick_to_body": 2.5,
+    "hammer_max_body_pct_range": 35.0,
+    "hammer_small_wick_max_pct_range": 12.0,
+    "hammer_body_zone_pct": 65.0,
+    "outside_close_zone_pct": 25.0,
+    "prior_trend_weeks": 3,
+    "minimum_prior_move_pct": 1.0,
+    "volume_average_weeks": 20
+  }
+}
